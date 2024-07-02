@@ -14,6 +14,8 @@ export const getUserName = (token) => api.get('/api/auth/user',{
     },
 });
 
+export const getAll = () => api.get('/api/auth/getall');
+
 export const getBoards = (token) => api.get('/api/board',{
     headers:{
         Authorization:token,
